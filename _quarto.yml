@@ -1,0 +1,18 @@
+project:
+  type: manuscript
+
+manuscript:
+  article: index.qmd
+
+format:
+  typst: 
+    toc: true
+    fig-dpi: 300
+    template: typst_base_template.typ
+    mainfont: "New Computer Modern"
+
+    execute:
+      freeze: auto
+      echo: true
+
+keep-ipynb: true

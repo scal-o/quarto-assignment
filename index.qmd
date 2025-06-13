@@ -1,0 +1,26 @@
+---
+title: "Project Title"
+subtitle: "Project Subtitle"
+author: "Your Name"
+date: "Current Date"
+---
+
+{{< pagebreak >}}
+
+# Section 1: Introduction
+
+{{< include "sections/section*"" >}}
+
+{{< pagebreak >}}
+
+{{< include "sections/section1_methods.qmd" >}}
+
+{{< pagebreak >}}
+
+# Section 2: Analysis
+
+{{< include "sections/section2_analysis.qmd" >}}
+
+{{< pagebreak >}}
+
+{{< include "sections/section2_results.qmd" >}}

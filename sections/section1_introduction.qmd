@@ -1,0 +1,38 @@
+## Introduction
+
+This section introduces the main concepts and objectives of the project. It provides an overview of the problem statement, methodology, and expected outcomes.
+
+### Background
+
+The background subsection provides context for the project, including relevant literature review and theoretical foundations. It helps the reader understand the significance of the work.
+
+### Problem Statement
+
+The problem statement clearly articulates the specific issue that the project aims to address. It should be concise and well-defined.
+
+### Mathematical Formulation
+
+The mathematical formulation of the problem is as follows:
+
+|  |  |
+|-----------------|-------------------------------------------------------|
+| $x_i$ | decision variable 1 |
+| $y_i$ | decision variable 2 |
+| $p_i$ | parameter 1 |
+| $i$ | index, $i \in \{1, \ldots, n\}$ |
+
+The objective function is defined as: 
+
+$$
+\text{Minimize} \quad z\left(\mathbf{x, y}\right) \quad=\quad \sum_{i = 1}^{n} p_i x_i
+$$ {#eq-obj-func}
+
+Subject to the following constraints:
+
+$$
+\sum_{i = 1}^{n} x_i \quad\le\quad C
+$$ {#eq-constr-1}
+
+$$
+x_i \ge 0 \qquad\forall i \in \{1, \ldots n\}
+$$ {#eq-constr-2}

@@ -1,0 +1,85 @@
+## Methods
+
+This section details the methodological approach used in this project. It covers the data collection procedure, analytical techniques, and implementation details.
+
+### Data Collection
+
+The data for this study was collected from various sources, including:
+
+- Source 1: Description of the data source
+- Source 2: Description of the data source
+- Source 3: Description of the data source
+
+The following table summarizes the key characteristics of the dataset:
+
+|  Variable  |  Description  |  Unit  |
+|------------|---------------|--------|
+| Variable 1 | Description of variable 1 | units |
+| Variable 2 | Description of variable 2 | units |
+| Variable 3 | Description of variable 3 | units |
+
+### Implementation
+
+The implementation was done using Python, with the following key libraries:
+
+```{python}
+#| eval: false
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+```
+
+The model was implemented as follows:
+
+```{python}
+#| eval: false
+def build_model(X_train, y_train):
+    """
+    Build and train the regression model.
+    
+    Parameters:
+    -----------
+    X_train : DataFrame
+        Training feature set
+    y_train : Series
+        Target variable
+        
+    Returns:
+    --------
+    model : LinearRegression
+        Trained regression model
+    """
+    model = LinearRegression()
+    model.fit(X_train, y_train)
+    return model
+
+# Example usage
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+model = build_model(X_train, y_train)
+```
+
+### Validation
+
+To validate the model's performance, we used the following metrics:
+
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- Coefficient of Determination (R²)
+
+The validation process involved k-fold cross-validation to ensure robustness of the results.
+
+$$
+\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+$$ {#eq-mse}
+
+$$
+\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
+$$ {#eq-rmse}
+
+$$
+\text{R}^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}
+$$ {#eq-r2}
