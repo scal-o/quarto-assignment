@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Quarto: Preview Watch",
+            "type": "shell",
+            "command": "ls **.qmd | entr -r uv run quarto preview index.qmd --port 4444 --no-watch-inputs",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
