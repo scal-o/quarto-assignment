@@ -4,7 +4,7 @@
         {
             "label": "Quarto: Preview Watch",
             "type": "shell",
-            "command": "ls **.qmd | entr -r uv run quarto preview index.qmd --port 4444 --no-watch-inputs",
+            "command": "uv run quarto render && code -r _manuscript/index.pdf",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -12,6 +12,14 @@
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
+            },
+            "options": {
+                "shell": {
+                    "executable": "fish",
+                    "args": [
+                        "-c"
+                    ]
+                }
             },
             "problemMatcher": []
         }
