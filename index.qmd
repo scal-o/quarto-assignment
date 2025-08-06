@@ -7,8 +7,6 @@ date: "Current Date"
 
 {{< pagebreak >}}
 
-# Section 1: Introduction
-
 {{< include "sections/section*"" >}}
 
 {{< pagebreak >}}
@@ -16,8 +14,6 @@ date: "Current Date"
 {{< include "sections/section1_methods.qmd" >}}
 
 {{< pagebreak >}}
-
-# Section 2: Analysis
 
 {{< include "sections/section2_analysis.qmd" >}}
 
