@@ -5,14 +5,28 @@ manuscript:
   article: index.qmd
 
 format:
-  typst: 
+  pdf:
     toc: true
     fig-dpi: 300
-    template: typst_base_template.typ
-    mainfont: "New Computer Modern"
+    highlight-style: gruvbox
+    code-block-bg: "#f2e8c4"
+    sansfont: "Latin Modern Roman"
+    mainfont: "Latin Modern Roman"
+    monofont: "Latin Modern Mono"
+    monofontoptions: 
+      - Scale=0.8
+    # sansfont: "CMU Serif"
+    # mainfont: "CMU Serif"
+    # monofont: "CMU Typewriter Text"
 
-    execute:
-      freeze: auto
-      echo: true
-
+  # typst:
+  #   toc: true
+  #   fig-dpi: 300
+  #   # template: typst_base_template.typ
+  #   mainfont: "New Computer Modern"
+  #   monofont: "New Computer Modern Mono"
+  #   highlight-style: github
+    
 keep-ipynb: true
+keep-typ: true
+keep-tex: true
